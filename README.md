@@ -18,7 +18,7 @@ Download latest Docker image:
 
 Create data volume container, name it `phantomjs` and expose `/home/jenkins/.phantomjs`:
 
-    $ docker create -v /home/jenkins/.phantomjs --name phantomjs dkdde/phantomjs-binaries:latest /bin/true
+    $ docker create -v /home/jenkins/.phantomjs --name phantomjs dkdde/phantomjs-binaries:latest
 
 ### Development
 
@@ -30,5 +30,4 @@ Create data volume container, name it `phantomjs` and expose `/home/jenkins/.pha
 Build image, tag appropriately and push to Docker Hub:
 
     $ docker build . --tag dkdde/phantomjs-binaries
-    $ docker push 
     $ docker push dkdde/phantomjs-binaries
